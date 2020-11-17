@@ -1,21 +1,6 @@
----
-layout: writeup
-categories: [writeup]
+Date:   2020-11-16
 
-# Mandatory parameters
-
-title:  "fair-dice"
-author: "Luxy"
-date:   2020-11-16 23:45:00 +0200
-event: "ENISA HACKFEST 2020"
-
-# Optional parameters
-
-source: "https://enisa-hackfest2020.cyberedu.ro/challenge/55d417c0-7f21-11ea-b126-e721f80ca279"
-solves: ""
-ctf_categories: [Misc, Programming]
-image: ""
----
+Categories: [Misc, Programming]
 
 ## Description
 
@@ -57,6 +42,7 @@ The first thing I had to do was get to know how exactly the bot was giving order
 ### Set 1
 
 ``` 
+
 Here is the blue dice:
 
        xxxxxxx
@@ -131,6 +117,7 @@ Ok?
 In the first set, the bot presents you 3 dice (blue, yellow, red) and he starts by picking one. You then have to choose one of the 2 remaining ones. 
 
 ``` 
+
 What are you choosing? blue / yellow / red: red
 Hey that is my dice!!!! Take another one!
 
@@ -143,6 +130,7 @@ I do not know that color...
 If you choose the same dice as the bot or a color he doesn't know, he'll complain and you have to choose again.
 
 ``` 
+
 I am chosing the yellow dice!
 What are you choosing? blue / yellow / red:
 ```
@@ -150,6 +138,7 @@ What are you choosing? blue / yellow / red:
 The dice are rolled and whoever gets a higher number, wins the round. 
 
 ``` 
+
 You won with 55 rounds!
 
 Time for second game!
@@ -160,6 +149,7 @@ If you have more points after 101 rounds than the bot, you win the first set.
 ### Set 2
 
 ``` 
+
 You are two lucky, altering rules!
  - We are playing with the same dices.
  - Each one of us selects 1 color of the playing dice.
@@ -170,6 +160,7 @@ You are two lucky, altering rules!
 In the second set, the rules change a bit. The bots uses the same 3 dice, but this time they are always rolled twice. (e.g., the bot chooses red, so he rolls red twice, after every roll, a winner is defined, but for the second roll, both rolls are added. So if the bot rolls 3 as a first roll and you 1, then the bot wins the first round. But if you roll a 5 in the second round and the bot a 2, you win with 1+5=6 points against 3+2=5)
 
 ``` 
+
 You won with 54 rounds!
 
 Time for third game!
@@ -180,6 +171,7 @@ If you win more often than the bot in 101 rounds, you move on to set 3.
 ### Set 3
 
 ``` 
+
 OMG! Again you? You are two lucky, altering rules!
  - We are playing 4 new dices.
  - Same rules as 1st game...
@@ -189,6 +181,7 @@ OMG! Again you? You are two lucky, altering rules!
 In the third round, the bot adds a fourth die (green) and also changes the other colored dice. 
 
 ``` 
+
 Let me show you the 4 dices we are going to play:
 
 Here is the blue dice:
@@ -291,6 +284,7 @@ Ok?
 The rules are the same as in the first set: 1 throw and the highest number wins. The player with the most wins after 101 rounds wins the set.
 
 ``` 
+
 You won with 52 rounds!
 
 Time for fourth game!  
@@ -299,6 +293,7 @@ Time for fourth game!
 ### Set 4
 
 ``` 
+
 ... No words ...  You are two lucky, altering rules!
  - We are playing 4 new dices.
  - Same rules as 2nd game...
@@ -308,6 +303,7 @@ Time for fourth game!
 The fourth and final set is played with 4 dice again but this time the rules are the same in round 2. In the first round the highest roll wins and in the next round the highest sum of the 2 rolls wins. If you win more often than the bot in 101 rounds, you win the set and he presents you the flag of the challenge.
 
 ``` 
+
 You won with 67 rounds!
 DCTF{7537c933a266a45500c5bd35f20679539f596df9e706dc95fae22d15b812141f}
 Good luck.
